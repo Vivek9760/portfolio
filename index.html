@@ -1,94 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vivek Saini</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="icon.ico" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Itim&family=Sacramento&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="top-container">
-      <div class="img1">
-        <img src="https://media2.giphy.com/media/ei4FvYnmhWIhpRZXOe/200w.webp?cid=ecf05e4712gq9xzyrg056tp9a2cth5tg2ir4fv4dce4v044o&rid=200w.webp&ct=s" class="cloud" alt="Bird Image" />
-      </div>
+    <title>Vivek Saini — Full Stack Developer</title>
+    <link rel="icon" href="./icons/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+</head>
 
-      <div class="text1">
-        <h1 class="me">I'm Vivek</h1>
-        <p class="web-developer">a Software Developer</p>
-      </div>
+<body>
 
-      <div class="img2">
-        <img class="bird" src="bird.svg" alt="cloud image" />
-      </div>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
 
-      <div class="img3">
-        <img
-          class="land"
-          src="https://web.archive.org/web/20180831175228/http://seanhalpin.io/assets/img/content/home/masthead/land.svg"
-          alt="mountain image"
-        />
-      </div>
-    </div>
+    <!-- NAV -->
+    <nav id="navbar">
+        <a class="nav-logo" href="#hero">VS<span>.</span></a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <div class="middle-container">
-      <div class="profile">
-        <img src="profile.svg" alt="Display Picture" />
-  
-        <p>
-          ❤ I want to become a Full Stack Developer & I love to
-          build creative Projects ❤
-        </p>
-      </div>
-      <hr />
-      <div class="skills">
-        <h1>My Skills</h1>
-        <div class="skill-row">
-          <img class="design-img" src="https://media4.giphy.com/media/zbMRZx113HKBkeCwrm/200w.webp?cid=ecf05e47tu4y7kq5t07t6uv4zky5kmqe01vrwr4ftlyve6uw&rid=200w.webp&ct=s" alt="javascript logo" />
-          <h3>Design & Development</h3>
-          <p class="code-des">
-          Experienced in MERN & MEVN stacks (MongoDB, Express.js, React/Vue, Node.js) — building dynamic full-stack apps end-to-end in JavaScript. Passionate JavaScript developer.
-          </p>
-          <div class="MERN-container">
-          <img class="MERN" src="https://media0.giphy.com/media/tAjb5pyCEBhEb8jWxC/200w.webp?cid=ecf05e47nrla1h88gqtk4ct6k5t2rh8af1lclv10kt0im620&rid=200w.webp&ct=s" alt="" />
-          <img class="MERN" src="https://media0.giphy.com/media/JfWPpXN0Dd4rEjYcH5/200w.webp?cid=ecf05e478w5wkzp0wr6ksngxfob68nlj1qhvcj9xsaq6hs2x&rid=200w.webp&ct=s" alt="">
-          <img class="MERN" src="https://media2.giphy.com/media/eNAsjO55tPbgaor7ma/200w.webp?cid=ecf05e472hl6td461fi0pw17dzpbfll07annd0m1b4jjv6x9&rid=200w.webp&ct=s" alt="">
-          <img class="MERN" src="https://media4.giphy.com/media/kdFc8fubgS31b8DsVu/giphy.webp?cid=ecf05e47d1gx3e4hz3tot3dvpadym5ncw6ov3wagdbuv8zaq&rid=giphy.webp&ct=s" height="200px" alt="">
-        </div>  
+    <!-- HERO -->
+    <section id="hero">
+        <div class="hero-grid-overlay"></div>
+        <div class="hero-glow"></div>
+
+        <div class="hero-tag">
+            <span class="dot"></span>
+            Available for new opportunities
         </div>
 
-        <div class="skill-row">
-          <img class="chess-img" src="https://media1.giphy.com/media/3o85xvnSxCKJZaSYmI/giphy.webp?cid=ecf05e47qqlhyrucouyzhr6w4y9ygwhxz8ikxlyhg9b2pts6&rid=giphy.webp&ct=g" alt="javascript logo" />
-          <h3>Chess</h3>
-          <p>
-           One of my skill is to play chess. i love to challenge anyone who knows how to play. whether i win or learn some awesome moves.
-           </p>
-        </div>
-      </div>
-      <hr />
-      <div class="contact-message">
-        <h1>Get In Touch</h1>
-        <h3>If you love MERN & MEVN as much as i do</h3>
-        <p>
-          If you love MERN as much as i do? let's talk about it & discuss some awesome project using these technologies.
+        <h1 class="hero-title">
+            Building things<br />
+            for the <em>web</em> that<br />
+            actually work.
+        </h1>
+
+        <p class="hero-sub">
+            Full Stack Developer specializing in MERN stack — crafting scalable SaaS platforms, real-time systems, and multi-tenant architectures with 3 years of production experience.
         </p>
-        <a class="btn" href="mailto:vvivekssaini@gmail.com">CONTACT ME</a>
-      </div>
-    </div>
 
-    <div class="bottom-container">
-      <a class="footer-link" href="https://www.linkedin.com/in/vivek-saini-73a5a3250/">LinkedIn</a>
-      <a class="footer-link" href="https://instagram.com/v_veksaini?igshid=OGQ2MjdiOTE=">Instagram</a>
-      <a class="footer-link" href="https://github.com/Vivek9760">Github</a>
-      <p class="copyright">© Vivek Saini</p>
-    </div>
+        <div class="hero-ctas">
+            <a href="#projects" class="btn btn-primary">View My Work →</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
 
-  </body>
+        <div class="hero-stats">
+            <div>
+                <div class="stat-num">3<span>+</span></div>
+                <div class="stat-label">Years of Experience</div>
+            </div>
+            <div>
+                <div class="stat-num">5<span>+</span></div>
+                <div class="stat-label">SaaS Products Shipped</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="about-grid reveal">
+            <div class="about-text">
+                <div class="section-label">About</div>
+                <h2 class="section-title">Code that ships,<br />teams that deliver.</h2>
+                <p>
+                    I'm <strong>Vivek Saini</strong>, a Full Stack Developer based in Roorkee, Uttarakhand — building scalable web applications that solve real problems. My core stack is MERN, but I go wherever the product needs me.
+                </p>
+                <p>
+                    At <strong>Agami Technology</strong>, I've shipped multi-tenant SaaS platforms, led frontend-to-backend development cycles, mentored junior developers, and kept production systems reliable. I care about code quality, delivery timelines, and building things that last.
+                </p>
+                <p>
+                    From scheduling engines with calendar integrations, to mortgage CRMs with database-per-tenant architecture — I've worked across domains and delivered.
+                </p>
+            </div>
+
+            <div class="skills-grid">
+                <div>
+                    <div class="skill-cat-title">Frontend</div>
+                    <div class="skill-pills">
+                        <span class="pill">React.js</span>
+                        <span class="pill">Vue.js</span>
+                        <span class="pill">JavaScript ES6+</span>
+                        <span class="pill">HTML</span>
+                        <span class="pill">CSS</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="skill-cat-title">Backend</div>
+                    <div class="skill-pills">
+                        <span class="pill">Node.js</span>
+                        <span class="pill">Express.js</span>
+                        <span class="pill">REST APIs</span>
+                        <span class="pill">WebSockets</span>
+                        <span class="pill">Webhooks</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="skill-cat-title">Databases</div>
+                    <div class="skill-pills">
+                        <span class="pill">MongoDB</span>
+                        <span class="pill">MySQL</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="skill-cat-title">Architecture & Tools</div>
+                    <div class="skill-pills">
+                        <span class="pill">Multi-tenant SaaS</span>
+                        <span class="pill">RBAC</span>
+                        <span class="pill">System Design</span>
+                        <span class="pill">Nginx</span>
+                        <span class="pill">Linux</span>
+                        <span class="pill">Git</span>
+                        <span class="pill">Agile/Scrum</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <div class="section-label reveal">Work</div>
+        <h2 class="section-title reveal">Selected Projects</h2>
+
+        <div class="projects-grid">
+
+            <a href="https://readysurvey.online/" target="_blank" class="project-card reveal" style="transition-delay: 0s">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <img height="30" width="30" src="./icons/readysurvey.png" alt="icon">
+                    </div>
+                    <span class="project-arrow">↗</span>
+                </div>
+                <div class="project-name">ReadySurvey</div>
+                <div class="project-desc">Multi-tenant SaaS platform with subdomain-based routing, white-label support, dynamic assessments, configurable feedback rules, and secure data isolation across organizations.</div>
+                <div class="project-tags">
+                    <span class="project-tag">MERN</span>
+                    <span class="project-tag">Multi-tenant</span>
+                    <span class="project-tag">Team management</span>
+                    <span class="project-tag">White-label</span>
+                    <span class="project-tag">Custom Domains</span>
+                </div>
+            </a>
+
+            <a href="https://kalnexa.com/" target="_blank" class="project-card reveal" style="transition-delay: 0.08s">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <img height="30" width="30" src="./icons/kalnexa.svg" alt="icon">
+                    </div>
+                    <span class="project-arrow">↗</span>
+                </div>
+                <div class="project-name">Kalnexa</div>
+                <div class="project-desc">Cross-platform scheduling app with timezone-aware booking, availability management, and integrations with Google Calendar, Google Meet, and Zoom for automated meeting workflows.</div>
+                <div class="project-tags">
+                    <span class="project-tag">MERN</span>
+                    <span class="project-tag">Team management</span>
+                    <span class="project-tag">Google APIs</span>
+                    <span class="project-tag">Zoom API</span>
+                    <span class="project-tag">Webhooks</span>
+                </div>
+            </a>
+
+            <a href="https://moserbus.com/" target="_blank" class="project-card reveal" style="transition-delay: 0.16s">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <img height="30" width="30" src="./icons/moserbus.svg" alt="icon">
+                    </div>
+                    <span class="project-arrow">↗</span>
+                </div>
+                <div class="project-name">Moserbus</div>
+                <div class="project-desc">Performance-optimized mortgage CRM with database-per-tenant architecture. Reduced dashboard latency through query optimization and structured data workflows for mortgage lifecycle management.</div>
+                <div class="project-tags">
+                    <span class="project-tag">MEVN</span>
+                    <span class="project-tag">Multi-tenant</span>
+                    <span class="project-tag">Performance</span>
+                </div>
+            </a>
+
+            <a href="https://nediaz.com/" target="_blank" class="project-card reveal" style="transition-delay: 0.24s">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <img height="30" width="30" src="./icons/nediaz.svg" alt="icon">
+                    </div>
+                    <span class="project-arrow">↗</span>
+                </div>
+                <div class="project-name">Nediaz</div>
+                <div class="project-desc">Job and business platform with scalable multi-user architecture. Led frontend migration from Alpine.js to Vue.js, improving maintainability, and built full admin + user management workflows.</div>
+                <div class="project-tags">
+                    <span class="project-tag">MEVN</span>
+                    <span class="project-tag">RBAC</span>
+                    <span class="project-tag">Socket.IO</span>
+                    <span class="project-tag">Migration</span>
+                </div>
+            </a>
+
+            <a href="https://fusion24x7.com/" target="_blank" class="project-card reveal" style="transition-delay: 0.32s">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <img height="30" width="30" src="./icons/fusion.svg" alt="icon">
+                    </div>
+                    <span class="project-arrow">↗</span>
+                </div>
+                <div class="project-name">Fusion24X7</div>
+                <div class="project-desc">Multi-tenant business management platform with real-time team collaboration, role-based access control, timesheet management, and structured organizational workflows.</div>
+                <div class="project-tags">
+                    <span class="project-tag">MERN</span>
+                    <span class="project-tag">Socket.IO</span>
+                    <span class="project-tag">RBAC</span>
+                    <span class="project-tag">Multi-tenant</span>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+        <div class="section-label reveal">Experience</div>
+        <h2 class="section-title reveal">Where I've Worked</h2>
+
+        <div class="exp-card reveal">
+            <div class="exp-header">
+                <div>
+                    <div class="exp-role">Full Stack Developer</div>
+                    <div class="exp-company">Agami Technology Pvt. Ltd.</div>
+                </div>
+                <span class="exp-date">Jul 2023 – Present</span>
+            </div>
+            <ul class="exp-bullets">
+                <li>Built and maintained full stack SaaS applications using the MERN stack — scalable APIs, responsive UIs, and reliable backend services.</li>
+                <li>Led team execution: task allocation, code reviews, and mentoring junior developers to maintain code quality and delivery timelines.</li>
+                <li>Worked on multi-tenant architectures with secure data isolation at scale, including subdomain routing and custom domain support.</li>
+                <li>Managed server deployments and configurations with Nginx and Linux, ensuring performance and uptime in production environments.</li>
+                <li>Collaborated with clients, PMs, and QA in Agile/Scrum to ship features aligned with business requirements.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="contact-wrapper">
+            <div class="section-label reveal" style="justify-content: center">Contact</div>
+            <h2 class="section-title reveal">Let's Build<br />Something Together</h2>
+            <p class="reveal" style="color: var(--muted); font-size: 0.95rem; margin-bottom: 1rem;">
+                Have a project in mind, or want to talk shop? My inbox is always open.
+            </p>
+            <a class="contact-email reveal" href="mailto:vvivekssaini@gmail.com">vvivekssaini@gmail.com</a>
+
+            <div class="contact-links reveal">
+                <a class="contact-link" href="https://linkedin.com/in/viveksaini9760" target="_blank">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" />
+                        <circle cx="4" cy="4" r="2" />
+                    </svg>
+                    LinkedIn
+                </a>
+                <a class="contact-link" href="https://github.com/Vivek9760" target="_blank">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                    </svg>
+                    GitHub
+                </a>
+                <a class="contact-link" href="#hero">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                        <path d="M2 17l10 5 10-5" />
+                        <path d="M2 12l10 5 10-5" />
+                    </svg>
+                    Portfolio
+                </a>
+                <a class="contact-link" href="tel:+919760567800">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.4 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.34 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.37a16 16 0 0 0 5.72 5.72l1.77-1.77a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 14.92z" />
+                    </svg>
+                    +91 97605 67800
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <span>© <span id="currentYear"></span> Vivek Saini. Built with intention.</span>
+        <span>Roorkee, Uttarakhand 🇮🇳</span>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
 </html>

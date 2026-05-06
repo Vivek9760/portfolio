@@ -5,409 +5,290 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vivek Saini — Full Stack Developer</title>
-    <link rel="icon" href="icons/favicon.svg" />
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icons/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-    <div class="grid-bg"></div>
-    <div class="orb orb-1"></div>
-    <div class="orb orb-2"></div>
-    <div class="orb orb-3"></div>
-    <div id="cursor"></div>
-    <div id="cursor-ring"></div>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
 
-    <!-- ── NAV ── -->
-    <nav>
-        <a href="#hero" class="nav-logo">
-            <span class="nav-logo-bracket">&lt;</span>VS<span class="nav-logo-bracket">/&gt;</span>
-        </a>
+    <!-- NAV -->
+    <nav id="navbar">
+        <a class="nav-logo" href="#hero">VS<span>.</span></a>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Work</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <div class="nav-actions">
-            <a href="https://github.com/Vivek9760" target="_blank" class="nav-icon-link" title="GitHub">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
-                </svg>
-            </a>
-            <a href="https://linkedin.com/in/viveksaini9760" target="_blank" class="nav-icon-link" title="LinkedIn">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                </svg>
-            </a>
-            <a href="resume.pdf" download="Vivek_Saini_CV" class="nav-resume-btn">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
-                    <polyline points="7 10 12 15 17 10" />
-                    <line x1="12" y1="15" x2="12" y2="3" />
-                </svg>
-                Resume
-            </a>
-        </div>
     </nav>
 
-    <!-- ── HERO ── -->
-    <div id="hero">
-        <div class="hero">
-            <div class="hero-inner">
-                <div>
-                    <div class="hero-tag fade-up">
-                        <span class="status-dot"></span>
-                        Available for new opportunities
-                    </div>
-                    <h1 class="fade-up d1">
-                        Vivek
-                        <span>Saini</span>
-                    </h1>
-                    <div class="hero-role fade-up d2">Full Stack Developer · MERN Stack · SaaS</div>
-                    <p class="fade-up d3">
-                        Full Stack Developer with 3+ years building scalable SaaS platforms, real-time systems, and multi-tenant architectures. I specialize in the MERN stack — crafting things for the web that actually work.
-                    </p>
-                    <div class="hero-cta fade-up d4">
-                        <a href="#projects" class="btn-primary">View My Work →</a>
-                        <a href="#contact" class="btn-ghost">Get In Touch</a>
-                    </div>
-                    <div class="hero-stats fade-up d5">
-                        <div>
-                            <div class="stat-num">3+</div>
-                            <div class="stat-label">Years Experience</div>
-                        </div>
-                        <div>
-                            <div class="stat-num">5+</div>
-                            <div class="stat-label">Projects Shipped</div>
-                        </div>
-                        <div>
-                            <div class="stat-num">∞</div>
-                            <div class="stat-label">Bugs Squashed</div>
-                        </div>
-                    </div>
-                </div>
+    <!-- HERO -->
+    <section id="hero">
+        <div class="hero-grid-overlay"></div>
+        <div class="hero-glow"></div>
 
-                <div class="hero-visual fade-up d5">
-                    <div class="terminal">
-                        <div class="terminal-bar">
-                            <div class="dot red"></div>
-                            <div class="dot yellow"></div>
-                            <div class="dot green"></div>
-                            <div class="terminal-title">vivek@fullstack:~</div>
-                        </div>
-                        <div class="terminal-body">
-                            <div><span class="t-prompt">$</span> whoami</div>
-                            <div><span class="t-val">vivek.saini</span></div>
-                            <br>
-                            <div><span class="t-prompt">$</span> cat stack.json</div>
-                            <div>{</div>
-                            <div>&nbsp;&nbsp;<span class="t-key">"core"</span>: <span class="t-val">"MERN Stack"</span>,</div>
-                            <div>&nbsp;&nbsp;<span class="t-key">"frontend"</span>: [<span class="t-val">"React"</span>, <span class="t-val">"Vue"</span>],</div>
-                            <div>&nbsp;&nbsp;<span class="t-key">"backend"</span>: [<span class="t-val">"Node"</span>, <span class="t-val">"Express"</span>],</div>
-                            <div>&nbsp;&nbsp;<span class="t-key">"db"</span>: [<span class="t-val">"MongoDB"</span>, <span class="t-val">"MySQL"</span>],</div>
-                            <div>&nbsp;&nbsp;<span class="t-key">"arch"</span>: <span class="t-val">"multi-tenant SaaS"</span>,</div>
-                            <div>&nbsp;&nbsp;<span class="t-key">"location"</span>: <span class="t-val">"Roorkee, India"</span></div>
-                            <div>}</div>
-                            <br>
-                            <div><span class="t-prompt">$</span> <span class="t-cursor"></span></div>
-                        </div>
-                    </div>
-                </div>
+        <div class="hero-tag">
+            <span class="dot"></span>
+            Available for new opportunities
+        </div>
+
+        <h1 class="hero-title">
+            Building things<br />
+            for the <em>web</em> that<br />
+            actually work.
+        </h1>
+
+        <p class="hero-sub">
+            Full Stack Developer specializing in MERN stack — crafting scalable SaaS platforms, real-time systems, and multi-tenant architectures with 3 years of production experience.
+        </p>
+
+        <div class="hero-ctas">
+            <a href="#projects" class="btn btn-primary">View My Work →</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
+
+        <div class="hero-stats">
+            <div>
+                <div class="stat-num">3<span>+</span></div>
+                <div class="stat-label">Years of Experience</div>
+            </div>
+            <div>
+                <div class="stat-num">5<span>+</span></div>
+                <div class="stat-label">SaaS Products Shipped</div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <hr class="divider">
-
-    <!-- ── ABOUT ── -->
+    <!-- ABOUT -->
     <section id="about">
-        <div class="section-header reveal">
-            <span class="section-num">01.</span>
-            <h2 class="section-title">About Me</h2>
-            <div class="section-line"></div>
-        </div>
         <div class="about-grid reveal">
             <div class="about-text">
-                <p>I'm <strong>Vivek Saini</strong>, a Full Stack Developer based in Roorkee, Uttarakhand — building scalable web applications that solve real problems. My core stack is MERN, but I go wherever the product needs me.</p>
-                <p>At <strong>Agami Technology</strong>, I've shipped multi-tenant SaaS platforms, led frontend-to-backend development cycles, mentored junior developers, and kept production systems reliable. I care about code quality, delivery timelines, and building things that last.</p>
-                <p>From scheduling engines with calendar integrations, to mortgage CRMs with database-per-tenant architecture — I've worked across domains and delivered results that matter.</p>
+                <div class="section-label">About</div>
+                <h2 class="section-title">Code that ships,<br />teams that deliver.</h2>
+                <p>
+                    I'm <strong>Vivek Saini</strong>, a Full Stack Developer based in Roorkee, Uttarakhand — building scalable web applications that solve real problems. My core stack is MERN, but I go wherever the product needs me.
+                </p>
+                <p>
+                    At <strong>Agami Technology</strong>, I've shipped multi-tenant SaaS platforms, led frontend-to-backend development cycles, mentored junior developers, and kept production systems reliable. I care about code quality, delivery timelines, and building things that last.
+                </p>
+                <p>
+                    From scheduling engines with calendar integrations, to mortgage CRMs with database-per-tenant architecture — I've worked across domains and delivered.
+                </p>
             </div>
-            <div class="skills-stack stagger">
-                <div class="skill-cat">
+
+            <div class="skills-grid">
+                <div>
                     <div class="skill-cat-title">Frontend</div>
-                    <div class="pill-row">
-                        <span class="pill">React.js</span><span class="pill">Vue.js</span>
-                        <span class="pill">JavaScript ES6+</span><span class="pill">HTML5</span><span class="pill">CSS3</span>
+                    <div class="skill-pills">
+                        <span class="pill">React.js</span>
+                        <span class="pill">Vue.js</span>
+                        <span class="pill">JavaScript ES6+</span>
+                        <span class="pill">HTML</span>
+                        <span class="pill">CSS</span>
                     </div>
                 </div>
-                <div class="skill-cat">
+                <div>
                     <div class="skill-cat-title">Backend</div>
-                    <div class="pill-row">
-                        <span class="pill">Node.js</span><span class="pill">Express.js</span>
-                        <span class="pill">REST APIs</span><span class="pill">WebSockets</span><span class="pill">Webhooks</span>
+                    <div class="skill-pills">
+                        <span class="pill">Node.js</span>
+                        <span class="pill">Express.js</span>
+                        <span class="pill">REST APIs</span>
+                        <span class="pill">WebSockets</span>
+                        <span class="pill">Webhooks</span>
                     </div>
                 </div>
-                <div class="skill-cat">
+                <div>
                     <div class="skill-cat-title">Databases</div>
-                    <div class="pill-row">
-                        <span class="pill">MongoDB</span><span class="pill">MySQL</span>
+                    <div class="skill-pills">
+                        <span class="pill">MongoDB</span>
+                        <span class="pill">MySQL</span>
                     </div>
                 </div>
-                <div class="skill-cat">
+                <div>
                     <div class="skill-cat-title">Architecture & Tools</div>
-                    <div class="pill-row">
-                        <span class="pill">Multi-tenant SaaS</span><span class="pill">RBAC</span>
-                        <span class="pill">System Design</span><span class="pill">Nginx</span>
-                        <span class="pill">Linux</span><span class="pill">Git</span><span class="pill">Agile/Scrum</span>
+                    <div class="skill-pills">
+                        <span class="pill">Multi-tenant SaaS</span>
+                        <span class="pill">RBAC</span>
+                        <span class="pill">System Design</span>
+                        <span class="pill">Nginx</span>
+                        <span class="pill">Linux</span>
+                        <span class="pill">Git</span>
+                        <span class="pill">Agile/Scrum</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <hr class="divider">
-
-    <!-- ── PROJECTS ── -->
+    <!-- PROJECTS -->
     <section id="projects">
-        <div class="section-header reveal">
-            <span class="section-num">02.</span>
-            <h2 class="section-title">Selected Work</h2>
-            <div class="section-line"></div>
-        </div>
-        <div class="projects-grid stagger">
+        <div class="section-label reveal">Work</div>
+        <h2 class="section-title reveal">Selected Projects</h2>
 
-            <a href="https://readysurvey.online/" target="_blank" class="project-card">
+        <div class="projects-grid">
+
+            <a href="https://readysurvey.online/" target="_blank" class="project-card reveal" style="transition-delay: 0s">
                 <div class="project-header">
-                    <div class="project-icon"><img height="30" width="30" src="icons/readysurvey.png" alt="icon"></div>
+                    <div class="project-icon">
+                        <img height="30" width="30" src="icons/readysurvey.png" alt="icon">
+                    </div>
                     <span class="project-arrow">↗</span>
                 </div>
-                <div class="project-num">PROJECT_01</div>
                 <div class="project-name">ReadySurvey</div>
                 <div class="project-desc">Multi-tenant SaaS platform with subdomain-based routing, white-label support, dynamic assessments, configurable feedback rules, and secure data isolation across organizations.</div>
                 <div class="project-tags">
-                    <span class="tag">MERN</span><span class="tag">Multi-tenant</span>
-                    <span class="tag">Team Mgmt</span><span class="tag">White-label</span><span class="tag">Custom Domains</span>
+                    <span class="project-tag">MERN</span>
+                    <span class="project-tag">Multi-tenant</span>
+                    <span class="project-tag">Team management</span>
+                    <span class="project-tag">White-label</span>
+                    <span class="project-tag">Custom Domains</span>
                 </div>
             </a>
 
-            <a href="https://kalnexa.com/" target="_blank" class="project-card">
+            <a href="https://kalnexa.com/" target="_blank" class="project-card reveal" style="transition-delay: 0.08s">
                 <div class="project-header">
-                    <div class="project-icon"><img height="30" width="30" src="icons/kalnexa.svg" alt="icon"></div>
+                    <div class="project-icon">
+                        <img height="30" width="30" src="icons/kalnexa.svg" alt="icon">
+                    </div>
                     <span class="project-arrow">↗</span>
                 </div>
-                <div class="project-num">PROJECT_02</div>
                 <div class="project-name">Kalnexa</div>
                 <div class="project-desc">Cross-platform scheduling app with timezone-aware booking, availability management, and integrations with Google Calendar, Google Meet, and Zoom for automated meeting workflows.</div>
                 <div class="project-tags">
-                    <span class="tag">MERN</span><span class="tag">Google APIs</span>
-                    <span class="tag">Zoom API</span><span class="tag">Webhooks</span>
+                    <span class="project-tag">MERN</span>
+                    <span class="project-tag">Team management</span>
+                    <span class="project-tag">Google APIs</span>
+                    <span class="project-tag">Zoom API</span>
+                    <span class="project-tag">Webhooks</span>
                 </div>
             </a>
 
-            <a href="https://moserbus.com/" target="_blank" class="project-card">
+            <a href="https://moserbus.com/" target="_blank" class="project-card reveal" style="transition-delay: 0.16s">
                 <div class="project-header">
-                    <div class="project-icon"><img height="30" width="30" src="icons/moserbus.svg" alt="icon"></div>
+                    <div class="project-icon">
+                        <img height="30" width="30" src="icons/moserbus.svg" alt="icon">
+                    </div>
                     <span class="project-arrow">↗</span>
                 </div>
-                <div class="project-num">PROJECT_03</div>
                 <div class="project-name">Moserbus</div>
                 <div class="project-desc">Performance-optimized mortgage CRM with database-per-tenant architecture. Reduced dashboard latency through query optimization and structured data workflows for mortgage lifecycle management.</div>
                 <div class="project-tags">
-                    <span class="tag">MEVN</span><span class="tag">Multi-tenant</span><span class="tag">Performance</span>
+                    <span class="project-tag">MEVN</span>
+                    <span class="project-tag">Multi-tenant</span>
+                    <span class="project-tag">Performance</span>
                 </div>
             </a>
 
-            <a href="https://nediaz.com/" target="_blank" class="project-card">
+            <a href="https://nediaz.com/" target="_blank" class="project-card reveal" style="transition-delay: 0.24s">
                 <div class="project-header">
-                    <div class="project-icon"><img height="30" width="30" src="icons/nediaz.svg" alt="icon"></div>
+                    <div class="project-icon">
+                        <img height="30" width="30" src="icons/nediaz.svg" alt="icon">
+                    </div>
                     <span class="project-arrow">↗</span>
                 </div>
-                <div class="project-num">PROJECT_04</div>
                 <div class="project-name">Nediaz</div>
                 <div class="project-desc">Job and business platform with scalable multi-user architecture. Led frontend migration from Alpine.js to Vue.js, improving maintainability, and built full admin + user management workflows.</div>
                 <div class="project-tags">
-                    <span class="tag">MEVN</span><span class="tag">RBAC</span>
-                    <span class="tag">Socket.IO</span><span class="tag">Migration</span>
+                    <span class="project-tag">MEVN</span>
+                    <span class="project-tag">RBAC</span>
+                    <span class="project-tag">Socket.IO</span>
+                    <span class="project-tag">Migration</span>
                 </div>
             </a>
 
-            <a href="https://fusion24x7.com/" target="_blank" class="project-card">
+            <a href="https://fusion24x7.com/" target="_blank" class="project-card reveal" style="transition-delay: 0.32s">
                 <div class="project-header">
-                    <div class="project-icon"><img height="30" width="30" src="icons/fusion.svg" alt="icon"></div>
+                    <div class="project-icon">
+                        <img height="30" width="30" src="icons/fusion.svg" alt="icon">
+                    </div>
                     <span class="project-arrow">↗</span>
                 </div>
-                <div class="project-num">PROJECT_05</div>
                 <div class="project-name">Fusion24X7</div>
                 <div class="project-desc">Multi-tenant business management platform with real-time team collaboration, role-based access control, timesheet management, and structured organizational workflows.</div>
                 <div class="project-tags">
-                    <span class="tag">MERN</span><span class="tag">Socket.IO</span>
-                    <span class="tag">RBAC</span><span class="tag">Multi-tenant</span>
+                    <span class="project-tag">MERN</span>
+                    <span class="project-tag">Socket.IO</span>
+                    <span class="project-tag">RBAC</span>
+                    <span class="project-tag">Multi-tenant</span>
                 </div>
-            </a>
-
-            <a href="https://github.com/Vivek9760" target="_blank"  class="project-card" style="display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;min-height:220px;">
-                <div style="font-size:28px;margin-bottom:14px;opacity:.6">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
-                    </svg>
-                </div>
-                <div class="project-name" style="margin-bottom:10px;">More on GitHub</div>
-                <p style="font-size:12px;color:var(--muted);margin-bottom:20px;font-family:var(--mono);">Personal projects & experiments</p>
-                <div style="display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:12px;color:var(--accent);text-decoration:none;border:1px solid rgba(0,229,160,0.3);padding:8px 16px;transition:all .2s;" onmouseenter="this.style.background='rgba(0,229,160,0.08)'" onmouseleave="this.style.background='transparent'">github.com/Vivek9760 →</div>
             </a>
 
         </div>
     </section>
 
-    <hr class="divider">
-
-    <!-- ── EXPERIENCE ── -->
+    <!-- EXPERIENCE -->
     <section id="experience">
-        <div class="section-header reveal">
-            <span class="section-num">03.</span>
-            <h2 class="section-title">Experience</h2>
-            <div class="section-line"></div>
-        </div>
+        <div class="section-label reveal">Experience</div>
+        <h2 class="section-title reveal">Where I've Worked</h2>
+
         <div class="exp-card reveal">
             <div class="exp-header">
                 <div>
                     <div class="exp-role">Full Stack Developer</div>
-                    <div class="exp-company">AGAMI TECHNOLOGY PVT. LTD.</div>
+                    <div class="exp-company">Agami Technology Pvt. Ltd.</div>
                 </div>
-                <div class="exp-date">Jul 2023 – Present</div>
+                <span class="exp-date">Jul 2023 – Present</span>
             </div>
             <ul class="exp-bullets">
                 <li>Built and maintained full stack SaaS applications using the MERN stack — scalable APIs, responsive UIs, and reliable backend services.</li>
                 <li>Led team execution: task allocation, code reviews, and mentoring junior developers to maintain code quality and delivery timelines.</li>
-                <li>Designed and implemented multi-tenant architectures with secure data isolation at scale, including subdomain routing and custom domain support.</li>
+                <li>Worked on multi-tenant architectures with secure data isolation at scale, including subdomain routing and custom domain support.</li>
                 <li>Managed server deployments and configurations with Nginx and Linux, ensuring performance and uptime in production environments.</li>
-                <li>Collaborated with clients, PMs, and QA in Agile/Scrum sprints to ship features aligned with business requirements on tight deadlines.</li>
+                <li>Collaborated with clients, PMs, and QA in Agile/Scrum to ship features aligned with business requirements.</li>
             </ul>
         </div>
     </section>
 
-    <hr class="divider">
-
-    <!-- ── CONTACT ── -->
+    <!-- CONTACT -->
     <section id="contact">
-        <div class="section-header reveal">
-            <span class="section-num">04.</span>
-            <h2 class="section-title">Contact</h2>
-            <div class="section-line"></div>
-        </div>
-        <div class="contact-wrap reveal">
-            <div>
-                <div class="contact-heading">
-                    Let's Build<br><span>Something Together</span>
-                </div>
-                <p class="contact-sub">Have a project in mind, or want to talk shop? Open to new roles, freelance work, and interesting collaborations. Based in Roorkee — inbox always open.</p>
-            </div>
-            <div class="contact-items">
-                <a href="mailto:vvivekssaini@gmail.com" class="contact-item">
-                    <div class="ci-icon">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <rect x="2" y="4" width="20" height="16" rx="2" />
-                            <path d="m22 7-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7" />
-                        </svg>
-                    </div>
-                    <div>
-                        <div class="ci-label">Email</div>
-                        <div class="ci-val">vvivekssaini@gmail.com</div>
-                    </div>
-                    <svg class="ci-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M7 17L17 7M17 7H7M17 7v10" />
+        <div class="contact-wrapper">
+            <div class="section-label reveal" style="justify-content: center">Contact</div>
+            <h2 class="section-title reveal">Let's Build<br />Something Together</h2>
+            <p class="reveal" style="color: var(--muted); font-size: 0.95rem; margin-bottom: 1rem;">
+                Have a project in mind, or want to talk shop? My inbox is always open.
+            </p>
+            <a class="contact-email reveal" href="mailto:vvivekssaini@gmail.com">vvivekssaini@gmail.com</a>
+
+            <div class="contact-links reveal">
+                <a class="contact-link" href="https://linkedin.com/in/viveksaini9760" target="_blank">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" />
+                        <circle cx="4" cy="4" r="2" />
                     </svg>
+                    LinkedIn
                 </a>
-                <a href="tel:+919760567800" class="contact-item">
-                    <div class="ci-icon">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.02 2.18 2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.09v2.83z" />
-                        </svg>
-                    </div>
-                    <div>
-                        <div class="ci-label">Phone</div>
-                        <div class="ci-val">+91 97605 67800</div>
-                    </div>
-                    <svg class="ci-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M7 17L17 7M17 7H7M17 7v10" />
+                <a class="contact-link" href="https://github.com/Vivek9760" target="_blank">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
                     </svg>
+                    GitHub
                 </a>
-                <div class="contact-item contact-static">
-                    <div class="ci-icon">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
-                            <circle cx="12" cy="10" r="3" />
-                        </svg>
-                    </div>
-                    <div>
-                        <div class="ci-label">Location</div>
-                        <div class="ci-val">Roorkee, Uttarakhand · India 🇮🇳</div>
-                    </div>
-                </div>
-                <a href="https://github.com/Vivek9760" target="_blank" class="contact-item">
-                    <div class="ci-icon">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
-                        </svg>
-                    </div>
-                    <div>
-                        <div class="ci-label">GitHub</div>
-                        <div class="ci-val">github.com/Vivek9760</div>
-                    </div>
-                    <svg class="ci-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M7 17L17 7M17 7H7M17 7v10" />
+                <a class="contact-link" href="#hero">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                        <path d="M2 17l10 5 10-5" />
+                        <path d="M2 12l10 5 10-5" />
                     </svg>
+                    Portfolio
                 </a>
-                <a href="https://linkedin.com/in/viveksaini9760" target="_blank" class="contact-item">
-                    <div class="ci-icon">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                        </svg>
-                    </div>
-                    <div>
-                        <div class="ci-label">LinkedIn</div>
-                        <div class="ci-val">linkedin.com/in/viveksaini9760</div>
-                    </div>
-                    <svg class="ci-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M7 17L17 7M17 7H7M17 7v10" />
+                <a class="contact-link" href="tel:+919760567800">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.4 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.34 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.37a16 16 0 0 0 5.72 5.72l1.77-1.77a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 14.92z" />
                     </svg>
+                    +91 97605 67800
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- ── FOOTER ── -->
+    <!-- FOOTER -->
     <footer>
-        <div class="footer-left">
-            <a href="#hero" class="footer-logo">
-                <span class="nav-logo-bracket">&lt;</span>VS<span class="nav-logo-bracket">/&gt;</span>
-            </a>
-            <span class="footer-sep">—</span>
-            <span class="footer-text">Full Stack Developer · Roorkee, India</span>
-        </div>
-        <div class="footer-socials">
-            <a href="https://github.com/Vivek9760" target="_blank" class="footer-social-link" title="GitHub">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
-                </svg>
-            </a>
-            <a href="https://linkedin.com/in/viveksaini9760" target="_blank" class="footer-social-link" title="LinkedIn">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                </svg>
-            </a>
-            <a href="mailto:vvivekssaini@gmail.com" class="footer-social-link" title="Email">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                    <rect x="2" y="4" width="20" height="16" rx="2" />
-                    <path d="m22 7-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7" />
-                </svg>
-            </a>
-        </div>
-        <div>
-            <span class="footer-text">© <span id="yr"></span> Vivek Saini. Built with intention.</span>
-        </div>
+        <span>© <span id="currentYear"></span> Vivek Saini. Built with intention.</span>
+        <span>Roorkee, Uttarakhand 🇮🇳</span>
     </footer>
 
     <script src="script.js"></script>
